@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BDDSeewebController;
 use App\Http\Controllers\SeewebController;
 use App\Http\Controllers\AddController;
 

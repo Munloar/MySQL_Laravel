@@ -5,9 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ajouter un nom de domaine</title>
+
+    <style>
+    * {box-sizing: border-box;}
+    body { 
+        margin: 0;
+
+        background-color: grey;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+
+    #titre{
+        color: white;
+        
+        padding-top: 5%;
+        padding-left: 30%;
+        float: none;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: white;
+    }
+
+    .container {
+        padding-top: 5%;
+        padding-left: 40%;
+        float: none;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+
+    
+
+    .lienIndex a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .lienIndex {
+        float: none;
+        position: fixed;
+        width: 100%;
+        bottom:0;
+        background-color: black;
+        color: white;
+    }
+</style>
 </head>
 <body>
-    <h1>Ajouter un nom de domaine</h1>
+    <h1 id="titre">Ajouter un nom de domaine</h1>
 
     <div class="container">
         <div class="row">
@@ -66,9 +116,10 @@
             </div>
         </div>
     </div>
-    <hr>
-    <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-            <a href="/listeBDD">Accès au visuel de l'index</a>
-        </div>
+
+    <div class="lienIndex">
+        <hr>
+        <a href="/listeBDD">Accès au visuel de l'index</a>
+    </div>
 </body>
 </html>

@@ -11,17 +11,75 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
         <!-- Styles -->
+        <style>
+            * {box-sizing: border-box;}
+
+            /*Style de texte et on colle en haut de page*/
+            body { 
+                margin: 0;
+
+                background-color: black;
+
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            a:link {
+                text-decoration: none;
+            }
+
+            
+            .contenantLien a:hover {
+                background-color: #F87700;
+                color: white;
+            }
+
+            #titre{
+                padding-top: 10%;
+                padding-left: 18%;
+                float: none;
+                color: white;
+                font-size: 25px;
+            }
+
+            .contenantLien {
+                padding-top: 10%;
+                float: none;
+                display: inline-block;
+                position: fixed;
+                width: 100%;
+                font-size: 30px;
+                /*border: solid red;*/
+            }
+
+            #lienIndex {
+                padding-left: 20%;
+                float: left;
+                /*border: solid white;*/
+            }
+
+            #lienAdd {
+                padding-right: 20%;
+                float: right;
+                /*border: solid blue;*/
+            }
+
+        </style>
     </head>
-    <body class="antialiased">
-
-        <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-            <a href="/listeBDD">Page Pour Index</a>
+    <body>
+        
+        <div id="titre">
+            <h1>Bienvenue sur la page d'accès à la base de données</h1>
         </div>
 
-        <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-            <a href="/AddBDD">Page Pour Ajouter</a>
-        </div>
+        <div class="contenantLien">
+            <div id="lienIndex">
+                <a href="/listeBDD">Page vers l'Index</a>
+            </div>
 
+            <div id="lienAdd">
+                <a href="/AddBDD">Page pour Ajouter</a>
+            </div>
+        </div>
             
     </body>
 </html>
